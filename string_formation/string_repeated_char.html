@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>string repeated character</title>
+    </head>
+    <body>
+        <script>
+            let user = prompt("Enter a string");
+            let charOccurrences = {};
+
+            // Count occurrences of each character in the input string
+            for (let i = 0; i < user.length; i++) {
+            let char = user[i];
+            if (charOccurrences[char]) {
+                charOccurrences[char]++;
+            } else {
+                charOccurrences[char] = 1;
+            }
+            }
+
+            console.log("Repeated characters:");
+            // Display characters that occur more than once
+            for (let char in charOccurrences) {
+            if (charOccurrences[char] > 1) {
+                console.log(char);
+            }
+            }
+
+
+        </script>
+    </body>
+</html>
