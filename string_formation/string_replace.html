@@ -6,15 +6,17 @@
     <body>
         <script>
             //Write a program to replace first character with last and vice-versa
-            let str = prompt("Write a string");
-            function replace(str) {
+            let user = prompt("Write a string");
+            function replace() {
                 // return str.slice(-1)+str.slice(1,-1)
-            return str.length <= 1 ? str : str.slice(-1) + str.slice(1, -1) + str[0];
+            // return user.length <= 1 ? user : user.slice(-1) + user.slice(1, -1) + user[0];//This is a ternary operator, which is a shorthand for an if-else statement |  It checks if the length of the input string str is less than or equal to 
+            return user.slice(-1) + user.slice(1, -1) + user[0];
             }
-            const result = replace(str);
+           
+            const result = replace();
             alert("Result: " + result);
             console.log("The character is replacing first character with last is: ", result)
 
-        </script>
+                </script>
     </body>
 </html>
