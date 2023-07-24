@@ -6,22 +6,23 @@
     <body>
         <script>
             let user = prompt("Enter a string");
-            let charOccurrences = {};
-
+            let str3 = [];
+            console.log(user,str3)
             // Count occurrences of each character in the input string
             for (let i = 0; i < user.length; i++) {
+               
             let char = user[i];
-            if (charOccurrences[char]) {
-                charOccurrences[char]++;
+            if (str3[char]) {
+                str3[char]++;
             } else {
-                charOccurrences[char] = 1;
+                str3[char] = 1;
             }
             }
 
             console.log("Repeated characters:");
             // Display characters that occur more than once
-            for (let char in charOccurrences) {
-            if (charOccurrences[char] > 1) {
+            for (let char in str3) {
+            if (str3[char] > 1) {
                 console.log(char);
             }
             }
