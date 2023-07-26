@@ -16,31 +16,48 @@
             </ul>
             <script>
                 
-                let inputNum = prompt("write the number");
-                let alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-                let result = alpha.slice(0,inputNum);
-                console.log(result);
-                let pattern = "";
-            for(let i=0;i<inputNum;i++){
-                pattern+=alpha[i]//The addition assignment ( += ) operator performs addition
-              console.log(i);
+            //     let inputNum = prompt("write the number");
+            //     let alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+            //     let result = alpha.slice(0,inputNum);
+            //     console.log(result);
                 
-                
-             }
-             console.log(pattern);
-            //  i = 0;
-            //  for(let j =0; i !=0; j--){
-            //     console.log(j)
-            //     connsole.log(pattern)
-            //     for (let j=i; k!=inputNum; i++){
-            //     console.log(i)
+            //     let pattern = "";
+            // for(let i=0;i<inputNum;i++){
+            //     pattern+=alpha[i]//The addition assignment ( += ) operator performs addition
+               
+            //     console.log(i);
             //     }
-            //  }
-             
-            //  console.log(pattern.slice(pattern.length-1)+(pattern.slice(0,1)));
-            // console.log(pattern.slice(-1)+alpha+(pattern.slice(1,26)));
+            //     for (let i = inputNum; i != 0; i--) {
+            //         console.log(i);
+            //     for (let j=i; j != inputNum; j++) {
+            //     pattern+=alpha[j];
+            //     console.log(j);
+            //      } 
+            //     }         
+                //******executable program
+                let inputNum = prompt("Write the number");
+                let alphaChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-             
+                if (inputNum >= 1 && inputNum <= alphaChar.length) {
+                let pattern = "";
+                
+                for (let i = 0; i < inputNum; i++) {
+                    pattern += alphaChar[i];
+                }
+
+                console.log(pattern);
+
+                for (let i = 0; i < inputNum; i++) {
+                    pattern = pattern.slice(-1) + pattern.slice(0, -1);
+                    console.log(pattern);
+                }
+                } else {
+                console.log("Please enter a number between 1 and " + alphaChar.length);
+                }
+
+
+            
+
             
                 
             </script>
