@@ -6,6 +6,35 @@
     <link rel="stylesheet" href="modal.css" />
   </head>
   <body>
-    <h1 id="heading">Accessibility modal</h1>
+  <div class="background-content">
+    <section id="main-content">
+      <h1>Accessibility modal</h1>
+      <h3>Do you know Accessibility Patterns?</h3>
+    </section>
+    <button id="btn-open" onClick="buttonClick()">
+      Open Accessibility modal
+    </button>
+    <div  id="modal" 
+          class="popup"
+          role="dialog">
+
+          
+      <h1 id="heading">Accessible modal</h1>
+      <p>Web Content Accessibility Guidelines (WCAG) 2.2 defines how to make Web content more accessible to people with disabilities. Accessibility involves a wide range of disabilities, including visual, auditory, physical, speech, cognitive, language, learning, and neurological disabilities.</p>
+        <div>
+      
+      
+        <button id="interactivElement" class="cancel1"  onClick="clickCancelButtonAndCloseModal()">Cancel</button></li>
+          <a class="learn" href="https://www.w3.org/WAI/ARIA/apg/patterns/">learn more</a></li>
+   
+   
+    </div>
+    </div>
+    <dialog open>
+      <p>Greetings, one and all!</p>
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </dialog>
   </body>
-</html>
+  </html>

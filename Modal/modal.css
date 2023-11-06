@@ -1,4 +1,48 @@
-#heading{
+#main-content{
     color: rgb(238, 45, 122);
     background-color: beige;
+    /* border: 2px solid black; */
+   
+  /*  padding-left: 60px;*/
+    margin-right:22cm;
+    margin-left:1;
+    
+}
+#main-content h3{
+    color:black;
+
+}
+/* #headingNo{
+    color:rgb(32, 147, 32);
+} */
+
+#modal{
+    border: 2px solid black;
+    border-radius:15px 15px 15px 15px ;
+    align-content: center;
+    display: none;
+    
+}
+#modal{
+    background-color:rgb(217, 216, 251);
+    margin: 5% auto;
+    padding: 20px;
+    width:30%;
+
+}
+#heading{
+    color:rgb(15, 38, 239)
+}
+body.modal{
+   
+}
+.learn{
+    color:blue;
+    padding:5px;
+}
+#interactivElement{
+    padding:5px;
+    color:rgb(36, 10, 40);
+    background-color:rgb(230, 236, 233);
+    border: 2px solid rgb(176, 105, 246);
 }
