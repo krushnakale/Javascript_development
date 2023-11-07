@@ -2,11 +2,47 @@
 <html lang="en">
 <head>
     <title>Html dialog modal</title>
-    <script src="dailog.js"></script>
+      
+    <link href="dailog.css" rel="stylesheet">
 </head>
 <body>
-    <h1>html dailog element</h1>
-    <h2>hellogit</h2>
-    <button>cancel</button>
+    <div id="error"></div>
+ 
+    <h1>HTML dailog element</h1>
+    <button data-open-modal>Open Accessibility Modal</button>
+    
+    <dialog data-modal class="modal-content">
+    
+        <h1>Submit your deatails here</h1>
+        <form  id="form" method="get" action="Result .html">
+            <p class="required">All * input fields are required for submit the form</p>
+           
+            <label  for="fn">First Name</label>
+            <span class="required">*</span>
+            <input  autocomplete="given-name" id="fn" type="text"  aria-describedby="name-error"><br>
+
+           
+
+            <label for="ln">Last Name</label>
+            <span class="required">*</span>
+            <input autocomplete="family-name"  id="ln" type="text" title="last name is required">  <br> 
+            <label for="email">Email:</label>
+            <span class="required">*</span>
+            <input id="email" autocomplete="email"><br>
+
+            <label aria-label="phone number" for="phone-number">Ph:</label>
+            <span class="required">*</span> 
+            <input id="phone-number" autocomplete="tel" type="number" >  <br>
+            <button type="submit" id="forml">submit</button>       
+        </form>
+
+        <button data-close-modal>close</button>
+        <!-- <a href="https://www.w3.org/WAI/ARIA/apg/patterns/">learn more </a> -->
+    
+    </dialog>
+    <script src="dailog.js"></script>        
+
 </body>
-</html>
+</html>      
+
+
