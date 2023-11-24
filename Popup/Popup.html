@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>popup</title>
+    <link href="Popup.css" rel="stylesheet">
+        
+</head> 
+<body>
+    <h1>Accessibility</h1>
+   <button  class="open-modal">open modal</button>
+   <div id="popup" class="modal hidden" role = "dialog">
+    <h3>This is the Accessible modal</h3>
+    
+    <p>When a dialog opens, focus moves to an element contained in the dialog. <br>Generally, focus is initially set on the first focusable element. However, the most appropriate focus placement will depend on the nature and size of the content. Examples include:
+        If the dialog content includes semantic structures, such as lists, tables</p>
+    <div tabindex="0" class="close-modal">cancel</div>
+    <div tabindex="0">save </div>
+    <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/" class="read-more">Read more</a>
+   </div>
+   <div class="overlay hidden"></div>
+   <script src="Popup.js"></script>
+
+  
+</body>
+</html>

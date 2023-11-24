@@ -1,0 +1,20 @@
+.hidden{
+    display:none;
+}
+
+#popup{
+    border: 2px solid black;
+    background-color: rgb(163, 196, 245);
+    padding: 20px;
+    margin-top: 50px;
+    margin-right:900px;
+    margin-left: 20px;
+}
+
+.read-more{
+    padding: 5px;
+    margin:10px;
+}
+.close-modal{
+    padding:5px;
+}
