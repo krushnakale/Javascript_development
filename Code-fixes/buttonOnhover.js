@@ -1,3 +1,4 @@
+//contrast lacks button/links on hover or focus
 function buttonHoverContrast(selector, color){
     let button = document.querySelector(selector)
 
