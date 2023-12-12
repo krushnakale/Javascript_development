@@ -1,5 +1,3 @@
-//button lacks contrast 
-
 function buttonHoverContrast(selector, color){
     let button = document.querySelector(selector)
 
@@ -18,3 +16,13 @@ function buttonHoverContrast(selector, color){
     })
 }
 buttonHoverContrast("#block-disaster-disastercentral-system-main > div > div > div.sitemap-item.sitemap-plugin--menu.sitemap-item--menu-main > div > ul > li:nth-child(6) > a","blue")
+
+
+//ActiveUserinterface-boundary
+function activeUserInterface(selector, borderColor){
+// Find the input field using the provided selector
+    let inputField = document.querySelector(selector)
+        inputField.style.border= borderColor
+}
+//Invoking function
+activeUserInterface("#edit-keys", "2px solid gray");
