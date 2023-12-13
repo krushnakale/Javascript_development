@@ -16,8 +16,7 @@ function buttonHoverContrast(selector, color){
         button.style.color = '';
     })
 }
-buttonHoverContrast("#block-disaster-disastercentral-system-main > div > div > div.sitemap-item.sitemap-plugin--menu.sitemap-item--menu-main > div > ul > li:nth-child(6) > a","blue")
-
+buttonHoverContrast("#navbarSupportedContent > ul > li:nth-child(6) > a","blue")
 
 //ActiveUserinterface-boundary
 function activeUserInterface(selector, borderColor){
@@ -27,3 +26,14 @@ function activeUserInterface(selector, borderColor){
 }
 //Invoking function
 activeUserInterface("#edit-keys", "2px solid gray");
+
+
+
+// heading  
+function headingMarkup(selector, headingLevel) {
+    let heading = document.querySelector(selector)
+    heading.setAttribute("role","heading")
+    heading.setAttribute("aria-level",headingLevel)
+    
+}
+headingMarkup("body > div.dialog-off-canvas-main-canvas > section.home-tagline > div > div > div > p",'3');
