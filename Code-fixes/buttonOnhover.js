@@ -37,3 +37,11 @@ function headingMarkup(selector, headingLevel) {
     
 }
 headingMarkup("body > div.dialog-off-canvas-main-canvas > section.home-tagline > div > div > div > p",'3');
+
+
+// landmark and Heading 2.4.1 Bypass block issue
+function landmarkName(selector){
+let main= document.querySelector(selector)
+main.setAttribute("role", "main")
+}
+landmarkName("body > div.dialog-off-canvas-main-canvas > section > div")
